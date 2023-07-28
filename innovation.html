@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/style_innovation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Innovation | OpenAI</title>
+</head>
+
+<body>
+    <!--This is header & navigation section of About Innovation -->
+    <header>
+        <nav>
+            <!--Hamburger menu in small screen-->
+            <div class="title-bar" data-responsive-toggle="navbar" data-hide-for="medium">
+                <button class="menu-icon" type="button" data-toggle="navbar"></button>
+                <div class="title-bar-title">Menu</div>
+                <!--<img class="nav-logo" src="./imgs/ps_logo_white.png" alt="PS" width="30px">-->
+            </div>
+
+            <!--Links need to be added-->
+            <div class="top-bar" id="navbar">
+                <div class="top-bar-left">
+                    <ul class="dropdown menu align-left" data-dropdown-menu>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./discover.html">Discover</a></li>
+                        <li><a href="./myconnects.html">My Connects</a></li>
+                        <li><a href="./myprofile.html">My Profile</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--This section is title, image and button -->
+    <section class="title grid-container fluid">
+        <div class="grid-x">
+            <img src="./imgs/openai.png">
+            <h1 class="company-title">OpenAI</h1>
+        </div>
+
+        <div class="grid-x grid-margin-x">
+            <input type="button" class="button cell small-6 medium-6 large-6" value="Follow">
+            <a href="./innovation-connected.html" class="cell small-6 medium-6 large-6"><input type="button"
+                    class="button cell small-6 medium-6 large-6" value="Connect"></a>
+        </div>
+    </section>
+
+    <!--This section is chip layout for categories -->
+    <section class="grid-container fluid">
+        <div class="chip">Tech</div>
+        <div class="chip">Innovation</div>
+        <div class="chip">A.I</div>
+        <div class="chip">Machine Learning</div>
+    </section>
+
+    <!--This section is tabs layout -->
+    <section class="grid-container fluid">
+        <div class="tab grid-x">
+            <button class="tablinks cell small-6 medium-6 large-6" onclick="openTabs(event, 'About')"
+                id="defaultOpen">About</button>
+            <button class="tablinks cell small-6 medium-6 large-6" onclick="openTabs(event, 'Team')">Team</button>
+        </div>
+    </section>
+
+
+    <!--This section is about, bio-->
+    <section class="grid-x">
+        <div id="About" class="tabcontent">
+            <h2 class="cell">Innovation Information</h2>
+            <p class="cell">OpenAI is a renowned research lab specializing in artificial
+                intelligence. ChatGPT, one of their
+                remarkable creations, utilizes natural language processing to offer conversational interactions and
+                provide information. It represents their commitment to advancing AI capabilities and delivering engaging
+                conversational experiences to users.</p>
+            <ul class="cell">
+                <li>Employees: 375</li>
+                <li>Founded: December 10, 2015</li>
+                <li>Industry: Artificial intelligence </li>
+                <li>Headquarters: San Francisco, California, U.S</li>
+                <li>Investment Stage: Series C</li>
+                <li>Evaluation: 27 Billion USD </li>
+                <li>Website: <a href="https://openai.com/">www.openai.com</a></li>
+            </ul>
+
+            <!--This is pitch section to showcase more about the innovation -->
+            <div>
+                <h2 class="grid-x">Teaser Pitches/Product Videos</h2>
+                <iframe class="cell" width="420" height="315" src="https://www.youtube.com/embed/rr8N5IOvTGk"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!--This is team section to showcase the team and the innovator -->
+    <section class="grid-x">
+        <div id="Team" class="tabcontent">
+            <h2 class="cell">Innovator/Team Information</h2>
+            <ul class="cell">
+                <li> <a href="https://en.wikipedia.org/wiki/Sam_Altman" target="_blank">Sam Altman (CEO & Innovator)
+                    </a>
+                </li>
+                <li><a href="https://gregbrockman.com/" target="_blank">Greg Brockman (Co-Founder and Chairman)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Ilya_Sutskever" target="_blank">Ilya Sutskever (Co-Founder
+                        and
+                        Chief Scientist)</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Wojciech_Zaremba" target="_blank">Wojciech Zaremba
+                        (Co-Founder
+                        and Chief Scientist)</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- This is the footer section of the page-->
+    <footer class="footer grid-container fluid">
+        <div class="small-9 medium-6 large-3">
+            <img src="./imgs/ps_logo_white1.png" />
+        </div>
+
+        <div class="grid-x">
+            <div class="cell small-6 medium-6 large-6">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">My Connects</a></li>
+                    <li><a href="#">My Profile</a></li>
+                </ul>
+            </div>
+
+            <div class="cell small-6 medium-6 large-6">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="cell small-3 medium-3 large-3">&copy; 2023 Puddleshaker. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function openTabs(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
