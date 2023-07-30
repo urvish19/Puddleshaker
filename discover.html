@@ -9,7 +9,12 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
     <title>Discover | Puddleshaker</title>
 </head>
 
@@ -25,19 +30,19 @@
                         menu
                     </span>
                 </button>
-        
+
                 <div class="main-logo">
                     <img src="./imgs/Puddleshaker_logo.png" alt="">
                 </div>
-        
+
                 <div class="top-bar-right">
                     <span class="material-symbols-outlined">
                         notifications
                     </span>
                 </div>
-        
+
             </div>
-        
+
             <!--Links need to be added-->
             <div class="top-bar" id="navbar">
                 <div class="top-bar-left">
@@ -55,166 +60,125 @@
 
     <!--This is the search bar-->
     <section class="grid-container fluid">
-        <h1 class="title">Discover</h1>
-        <form>
-            <input type="text" placeholder="Search...">
-            <button>Search</button>
+        <form class="grid-x">
+            <input class="small-10 medium-10 large-10" id="search-bar" type="text" placeholder="Search...">
+            <button class="small-2 medium-2 large-2">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+            </button>
         </form>
     </section>
 
-    <!--This section is for searching innovations by categories-->
     <section class="grid-container fluid">
-        <h2>Search by Categories</h2>
-        <div class="grid-x grid-margin-x">
-            <input type="button" class="button cell small-4 medium-2 large-2" value="Sort by">
-            <input type="button" class="button cell small-4 medium-2 large-2" value="Location">
-            <input type="button" class="button cell small-4 medium-2 large-2" value="Industry">
-            <input type="button" class="button cell small-4 medium-2 large-2" value="Company size">
-            <input type="button" class="button cell small-4 medium-2 large-2" value="Evaluation">
-        </div>
-    </section>
-
-    <section class="grid-container fluid">
-        <h2>Browse Innovations</h2>
+        <h1>Browse Innovations</h1>
     </section>
 
     <!--This section shows a brief of innovations and connect button-->
     <section class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/openai.png" style="width:50%" />
-                    <h3 class="cell">Open Ai</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+                                    padding-left: 0px;
+                                    padding-right: 0px;
+                                ">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
                 </div>
 
-                <div class="grid-x">
-                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT,
-                        one of their remarkable
-                        creations, utilizes natural language processing..</p>
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
                             value="Connect"></a>
                 </div>
             </div>
 
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/revolut.jpg" style="width:50%" />
-                    <h3 class="cell">Revolut</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+                        padding-left: 0px;
+                        padding-right: 0px;
+                    ">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
                 </div>
 
-                <div class="grid-x">
-                    <p class="cell">Revolut revolutionizes financial services with mobile banking, card payments,
-                        money remittance, and foreign exchange expertise, delivering seamless...</p>
-                    <input type="button" class="button cell" value="Connect">
-                </div>
-            </div>
-        </div>
-
-        <div class="grid-x grid-margin-x">
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/springboard.jpg" style="width:50%" />
-                    <h3 class="cell">Springboard</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
-                </div>
-
-                <div class="grid-x">
-                    <p class="cell">Springboard provides users with essential in-demand job skills,
-                        empowering them to advance their professional careers and achieve new heights of success.</p>
-                    <input type="button" class="button cell" value="Connect">
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
+                    <a href="./innovation.html" class="cell"><input type="button" class="button cell"
+                            value="Connect"></a>
                 </div>
             </div>
 
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/nuvoair.jpg" style="width:50%" />
-                    <h3 class="cell">NuvoAir</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+            padding-left: 0px;
+            padding-right: 0px;
+        ">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
                 </div>
 
-                <div class="grid-x">
-                    <p class="cell">NuvoAir is your go-to platform for respiratory health tracking, improvement, and
-                        cure. The startup offers
-                        devices to track and monitor the respiratory health of individuals - young and old alike.</p>
-                    <input type="button" class="button cell" value="Connect">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="grid-container">
-
-        <div class="grid-x grid-margin-x">
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/openai.png" style="width:50%" />
-                    <h3 class="cell">Open Ai</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
-                </div>
-
-                <div class="grid-x">
-                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT,
-                        one of their remarkable
-                        creations, utilizes natural language processing..</p>
-                    <input type="button" class="button cell" value="Connect">
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
+                    <a href="./innovation.html" class="cell"><input type="button" class="button cell"
+                            value="Connect"></a>
                 </div>
             </div>
 
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/revolut.jpg" style="width:50%" />
-                    <h3 class="cell">Revolut</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+padding-left: 0px;
+padding-right: 0px;
+">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
                 </div>
 
-                <div class="grid-x">
-                    <p class="cell">Revolut revolutionizes financial services with mobile banking, card payments,
-                        money remittance, and foreign exchange expertise, delivering seamless...</p>
-                    <input type="button" class="button cell" value="Connect">
-                </div>
-            </div>
-        </div>
-
-        <!--This section shows a brief of innovations and connect button-->
-        <div class="grid-x grid-margin-x">
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/springboard.jpg" style="width:50%" />
-                    <h3 class="cell">Springboard</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
-                </div>
-
-                <div class="grid-x">
-                    <p class="cell">Springboard provides users with essential in-demand job skills,
-                        empowering them to advance their professional careers and achieve new heights of success.</p>
-                    <input type="button" class="button cell" value="Connect">
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
+                    <a href="./innovation.html" class="cell"><input type="button" class="button cell"
+                            value="Connect"></a>
                 </div>
             </div>
 
-            <div class="meetCard grid-container cell medium-6 large-6">
-                <div class="grid-x">
-                    <img class="cell" src="./imgs/nuvoair.jpg" style="width:50%" />
-                    <h3 class="cell">NuvoAir</h3>
-                    <div class="chip">Tech</div>
-                    <div class="chip">Innovation</div>
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+padding-left: 0px;
+padding-right: 0px;
+">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
                 </div>
 
-                <div class="grid-x">
-                    <p class="cell">NuvoAir is your go-to platform for respiratory health tracking, improvement, and
-                        cure. The startup offers
-                        devices to track and monitor the respiratory health of individuals - young and old alike.</p>
-                    <input type="button" class="button cell" value="Connect">
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
+                    <a href="./innovation.html" class="cell"><input type="button" class="button cell"
+                            value="Connect"></a>
                 </div>
             </div>
+
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
+padding-left: 0px;
+padding-right: 0px;
+">
+                <div class="grid-x cell" id="card-top">
+                    <img class="company-image" src="./imgs/openaii.png">
+                </div>
+
+                <div class="grid-x" id="card-bottom">
+                    <h2 class="cell">Open AI</h2>
+                    <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
+                    </p>
+                    <a href="./innovation.html" class="cell"><input type="button" class="button cell"
+                            value="Connect"></a>
+                </div>
+            </div>
+
         </div>
     </section>
 

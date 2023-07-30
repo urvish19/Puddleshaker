@@ -3,6 +3,31 @@
   margin: 0;
 }
 
+p{
+  color: var(--body-text-100, #4B587C);
+text-align: center;
+
+/* Body/Small */
+font-family: Roboto;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.4px;
+}
+
+h1{
+  color: var(--title-text-100, #21293C);
+
+/* Title/Medium */
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+letter-spacing: 0.15px;
+}
+
 /* styles.css */
 body {
   display: none; /* Hide the content initially */
@@ -34,6 +59,11 @@ header a {
   border-radius: 25px;
 }
 
+#search-bar {
+  border-radius: 6px;
+  border: 0.5px solid var(--subtle-text-75, rgba(79, 78, 78, 0.75));
+}
+
 .button[value="Delete"] {
   background-color: #fff;
   color: #000;
@@ -51,12 +81,12 @@ header a {
   margin-top: 16px;
 }
 
-/* Solid button*/
+/* outline button*/
 .button {
-  background-color: #000;
-  color: #fff;
-  border-radius: 25px;
-  margin: 16px 0px;
+  border-radius: 4px;
+  border: 0.5px solid var(--primary-100, #F17661);
+  background: #FFF;
+  color: #F17661;
 }
 
 .sociallogos {
@@ -115,15 +145,30 @@ header a {
   padding: 6px 12px;
 }
 
-.meetCard {
-  border-radius: 16px;
-  border: 1px solid #000;
+.company-image{ 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.company-card {
+  border-radius: 6px;
+  border: 0.5px solid var(--disabled-100, #C2C2C2);
   background: #FFF;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 4px;
-  margin: 16px 0px;
+  margin: 16px 8px;
+  height: auto;
+}
+
+#card-top{
+  border-radius: 7px 7px 0px 0px;
+  background: #10A37F;
+  height: 75px;
+}
+
+#card-bottom{
+  margin-top: 16px;
+  text-align: center;
+  padding: 0px 16px;
 }
 
 input[type="checkbox"] { 
