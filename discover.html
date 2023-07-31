@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preExplore" href="https://fonts.googleapis.com">
+    <link rel="preExplore" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
     <title>Discover | Puddleshaker</title>
@@ -48,7 +48,7 @@
                 <div class="top-bar-left">
                     <ul class="cell dropdown menu align-left" data-dropdown-menu>
                         <li class="small-12 medium-2 large-3"><a href="./index.html">Home</a></li>
-                        <li class="small-12 medium-2 large-3"><a href="./myconnects.html">My Connections</a></li>
+                        <li class="small-12 medium-2 large-3"><a href="./myExplores.html">My Exploreions</a></li>
                         <li class="small-12 medium-2 large-3"><a href="#">Messages</a></li>
                         <li class="small-12 medium-2 large-3"><a href="./myprofile.html">Profile</a></li>
                         <li class="small-12 medium-2 large-3"><a href="./login.html">Log out</a></li>
@@ -59,28 +59,32 @@
     </header>
 
     <!--This is the search bar-->
-    <section class="grid-container fluid">
-        <form class="grid-x">
-            <input class="small-10 medium-10 large-10" id="search-bar" type="text" placeholder="Search...">
-            <button class="small-2 medium-2 large-2">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-            </button>
-        </form>
+    <section class="grid-container fluid grid-x">
+        <div class="small-10" id="search-bar">
+            <p>Search...</p>
+        </div>
+
+        <button class="small-2">
+            <span class="material-symbols-outlined">
+                search
+            </span>
+        </button>
     </section>
 
-    <section class="grid-container fluid">
-        <h1>Browse Innovations</h1>
+    <!-- Filter Option with the title-->
+    <section class="grid-container fluid grid-x">
+        <h1 class="small-10">Browse Innovations</h1>
+        <button class="small-2">
+            <span class="material-symbols-outlined">
+                filter_alt
+            </span>
+        </button>
     </section>
 
-    <!--This section shows a brief of innovations and connect button-->
+    <!--CARDS: This section shows a brief of innovations and Explore button-->
     <section class="grid-container">
         <div class="grid-x grid-margin-x">
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-                                    padding-left: 0px;
-                                    padding-right: 0px;
-                                ">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -90,14 +94,11 @@
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-                        padding-left: 0px;
-                        padding-right: 0px;
-                    ">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -107,14 +108,11 @@
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-            padding-left: 0px;
-            padding-right: 0px;
-        ">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -124,14 +122,11 @@
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-padding-left: 0px;
-padding-right: 0px;
-">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -141,14 +136,11 @@ padding-right: 0px;
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-padding-left: 0px;
-padding-right: 0px;
-">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -158,14 +150,11 @@ padding-right: 0px;
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
-            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="
-padding-left: 0px;
-padding-right: 0px;
-">
+            <div class="company-card grid-container fluid cell small-6 medium-4 large-3" style="padding-left: 0px; padding-right: 0px;">
                 <div class="grid-x cell" id="card-top">
                     <img class="company-image" src="./imgs/openaii.png">
                 </div>
@@ -175,7 +164,7 @@ padding-right: 0px;
                     <p class="cell">OpenAI is a renowned research lab specializing in artificial intelligence. ChatGPT
                     </p>
                     <a href="./innovation.html" class="cell"><input type="button" class="button cell"
-                            value="Connect"></a>
+                            value="Explore"></a>
                 </div>
             </div>
 
@@ -194,7 +183,7 @@ padding-right: 0px;
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Discover</a></li>
-                    <li><a href="#">My Connects</a></li>
+                    <li><a href="#">My Explores</a></li>
                     <li><a href="#">My Profile</a></li>
                 </ul>
             </div>
