@@ -112,29 +112,24 @@ header a {
   margin-top: 16px;
 }
 
-.button[value="Delete"] {
-  background-color: #fff;
-  color: #000;
-  border-radius: 25px;
-  border: 2px solid #000;
-  margin-top: 16px;
-}
-
-/* Solid button*/
-.button[value="Follow"] {
-  background-color: #fff;
-  color: #000;
-  border-radius: 25px;
-  border: 2px solid #000;
-  margin-top: 16px;
-}
-
 /* outline button*/
-.button {
+#outline-button {
   border-radius: 4px;
   border: 0.5px solid var(--primary-100, #F17661);
   background: #FFF;
   color: #F17661;
+  padding: 16px 0px;
+  margin: 16px 8px;
+}
+
+#solid-button {
+  border-radius: 4px;
+  border: 0.5px solid var(--primary-100, #F17661);
+  background: var(--primary-100, #F17661);
+  mix-blend-mode: multiply;
+  padding: 16px 0px;
+  color: #FFF;
+  margin: 16px 8px;
 }
 
 .sociallogos {
