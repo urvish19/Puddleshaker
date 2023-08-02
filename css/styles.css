@@ -5,30 +5,58 @@
 
 /*Font Definition*/ 
 
-p{
+#card-content {
   color: var(--body-text-100, #4B587C);
-text-align: center;
+  text-align: center;
 
-/* Body/Small */
-font-family: Roboto;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: 16px; /* 133.333% */
-letter-spacing: 0.4px;
+  /* Body/Medium */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.25px;
 }
 
-h1{
+h1 {
   color: var(--title-text-100, #21293C);
 
-/* Title/Medium */
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 150% */
-letter-spacing: 0.15px;
+  /* Title/Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.15px;
 }
+
+h2 {
+  color: var(--title-text-100, #21293C);
+  text-align: center;
+
+  /* Title/Small */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.1px;
+}
+
+#subtle-text {
+  color: var(--subtle-text-75, rgba(79, 78, 78, 0.75));
+  /* Body/Small */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+  letter-spacing: 0.4px;
+}
+
 /*Headline Font*/
 #headline {
   color: var(--title-text-100, #21293C);
@@ -112,6 +140,20 @@ header a {
   margin-top: 16px;
 }
 
+/* Style the chip */
+.chip {
+  border-radius: 4px;
+  border: 1px dashed var(--disabled-100, #C2C2C2);
+  color: var(--primary-75, rgba(241, 118, 97, 0.75));
+  margin: 8px;
+  padding: 2px 8px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* outline button*/
 #outline-button {
   border-radius: 4px;
@@ -134,15 +176,6 @@ header a {
 
 .sociallogos {
   display: inline-block;
-}
-
-/* Style the chip */
-.chip {
-  border-radius: 4px;
-  border: 1px dashed var(--disabled-100, #C2C2C2);
-  color: var(--primary-75, rgba(241, 118, 97, 0.75));
-  margin: 8px;
-  padding: 3px 8px;
 }
 
 /* Style the tab */
@@ -172,7 +205,7 @@ header a {
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #fff;
-  border: 2px solid #000;
+  border: 2px solid var(--primary-100, #F17661);;
   border-top-style: none;
   border-right-style: none;
   border-bottom-style: solid;
@@ -183,6 +216,17 @@ header a {
 .tabcontent {
   display: none;
   padding: 6px 12px;
+  text-align: left;
+  color: var(--body-text-100, #4B587C);
+
+  /* Body/Medium */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.25px;
 }
 
 /* Innovation Card Content*/
@@ -197,7 +241,7 @@ header a {
   border-radius: 6px;
   border: 0.5px solid var(--disabled-100, #C2C2C2);
   background: #FFF;
-  margin: 8px 8px;
+  margin: 12px 8px;
   height: auto;
 }
 
@@ -212,7 +256,36 @@ header a {
 #card-bottom{
   margin-top: 16px;
   text-align: center;
-  padding: 0px 16px;
+  padding: 8px 12px;
+}
+
+/*Profile card*/
+#profile-card{
+  border-radius: 6px;
+  border: 0.5px solid var(--disabled-100, #C2C2C2);
+  background: #FFF;
+  margin: 12px 8px;
+  height: auto;
+  padding: 8px;
+}
+
+#profile-top{
+  margin-top: 16px;
+}
+
+#profile-content{
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+#profile-text{
+  padding: 4px 0px;
+  text-align: center;
+  margin: 0px;
+}
+
+#social-icons{
+  padding: 8px 10px;
 }
 
 input[type="checkbox"] { 
