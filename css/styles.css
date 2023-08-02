@@ -3,33 +3,12 @@
   margin: 0;
 }
 
+/* styles.css */
+body {
+  display: none; /* Hide the content initially */
+}
+
 /*Font Definition*/ 
-
-#card-content {
-  color: var(--body-text-100, #4B587C);
-  text-align: center;
-
-  /* Body/Medium */
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 20px; /* 142.857% */
-  letter-spacing: 0.25px;
-}
-
-#menu-text {
-  color: var(--body-text-100, #4B587C);
-
-  /* Title/Medium */
-  font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  /* 150% */
-  letter-spacing: 0.15px;
-}
 
 h1 {
   color: var(--title-text-100, #21293C);
@@ -58,18 +37,6 @@ h2 {
   letter-spacing: 0.1px;
 }
 
-#subtle-text {
-  color: var(--subtle-text-75, rgba(79, 78, 78, 0.75));
-  /* Body/Small */
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 16px;
-  /* 133.333% */
-  letter-spacing: 0.4px;
-}
-
 /*Headline Font*/
 #headline {
   color: var(--title-text-100, #21293C);
@@ -83,14 +50,53 @@ h2 {
   /* 133.333% */
 }
 
-/*Innovation page company logo and title*/
+#menu-text {
+  color: var(--body-text-100, #4B587C);
+
+  /* Title/Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.15px;
+}
+
+#subtle-text {
+  color: var(--subtle-text-75, rgba(79, 78, 78, 0.75));
+  /* Body/Small */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+  letter-spacing: 0.4px;
+}
+
+#card-content {
+  color: var(--body-text-100, #4B587C);
+  text-align: center;
+
+  /* Body/Medium */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.25px;
+}
+
+
+/*BANNER: Innovation page company logo and title*/
 
 #banner-color{
   background: #10A37F;
   height: 66px;
 }
 
-#company-logo {
+#banner-logo {
   width: 80px;
   height: 80px;
   background: rgba(255, 255, 255, 1);
@@ -104,7 +110,7 @@ h2 {
   left: 8px;
 }
 
-#company-title {
+#banner-title {
   color: var(--title-text-100, #21293C);
   /* Title/Large */
   font-family: Roboto;
@@ -116,11 +122,6 @@ h2 {
   left: 16px;
   top: 8px;
 
-}
-
-/* styles.css */
-body {
-  display: none; /* Hide the content initially */
 }
 
 header a {
@@ -138,14 +139,7 @@ header a {
   margin-top: 16px;
 }
 
-
-.notification {
-  background-color: #f4f4f4;
-  margin: 8px 0px;
-  padding: 16px;
-  border-radius: 25px;
-}
-
+/*Search bar*/
 #search-bar {
   border-radius: 6px;
   border: 0.5px solid var(--subtle-text-75, rgba(79, 78, 78, 0.75));
@@ -177,6 +171,7 @@ header a {
   margin: 12px 8px;
 }
 
+/*Solid button*/
 #solid-button {
   border-radius: 4px;
   border: 0.5px solid var(--primary-100, #F17661);
@@ -250,11 +245,12 @@ header a {
 }
 
 /*Card*/
-.company-card {
+#company-card {
+  transition: box-shadow .3s;
   border-radius: 6px;
   border: 0.5px solid var(--disabled-100, #C2C2C2);
-  background: #FFF;
   margin: 12px 8px;
+  background: #fff;
   height: auto;
 }
 
