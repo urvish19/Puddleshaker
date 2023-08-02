@@ -170,6 +170,7 @@ header a {
   mix-blend-mode: multiply;
   padding: 16px 8px;
   margin: 16px 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
@@ -182,6 +183,7 @@ header a {
   padding: 16px 8px;
   color: #FFF;
   margin: 16px 8px;
+  margin-bottom: 8px;
   text-align: center;
 }
 
