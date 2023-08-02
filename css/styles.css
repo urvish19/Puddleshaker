@@ -245,13 +245,78 @@ header a {
 }
 
 /*Card*/
-.company-card {
+#company-card {
+  transition: box-shadow .3s;
   border-radius: 6px;
   border: 0.5px solid var(--disabled-100, #C2C2C2);
-  background: #FFF;
-  margin: 12px 8px;
+  margin: 12px 0px;
+  background: #fff;
   height: auto;
+  height: 260px;
 }
+
+#company-card:hover{
+  box-shadow: 3px 3px 6px 0px rgba(0, 0, 0, 0.10);
+}
+
+#company-logo {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 59px;
+  border: 1px solid #E6E6E6;
+  padding: 8px 8px;
+  margin: 8px;
+  opacity: 1;
+  position: relative;
+  top: 20px;
+  left: 45px;
+}
+
+#company-bottom {
+  margin-top: 48px;
+  text-align: center;
+  padding: 8px 12px;
+}
+
+#openai-color {
+  background: #10A37F;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#cradlewise-color {
+  background: #FF595A;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#brewbuddy-color {
+  background: #6D573E;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#whiteinc-color {
+  background: #313852;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#lesrin-color {
+  background: #5E548E;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+#tiffinboy-color {
+  background: #FFBC00;
+  height: 66px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+
+
 
 /*Card Top*/
 #card-top{
