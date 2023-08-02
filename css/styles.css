@@ -18,6 +18,19 @@
   letter-spacing: 0.25px;
 }
 
+#menu-text {
+  color: var(--body-text-100, #4B587C);
+
+  /* Title/Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.15px;
+}
+
 h1 {
   color: var(--title-text-100, #21293C);
 
@@ -161,7 +174,7 @@ header a {
   background: #FFF;
   color: #F17661;
   padding: 16px 0px;
-  margin: 16px 8px;
+  margin: 12px 8px;
 }
 
 #solid-button {
@@ -282,6 +295,19 @@ header a {
   padding: 4px 0px;
   text-align: center;
   margin: 0px;
+}
+
+#meeting-card {
+  border-radius: 6px;
+  border: 0.5px solid var(--disabled-100, #C2C2C2);
+  background: #FFF;
+  margin: 12px 8px;
+  height: auto;
+  padding: 8px;
+}
+
+#meeting-text{
+  margin: 8px;
 }
 
 #social-icons{
