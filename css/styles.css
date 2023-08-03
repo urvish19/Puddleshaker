@@ -513,6 +513,53 @@ header a {
   margin-top: 2px;
 }
 
+#profile-img{
+  padding: 4px;
+  margin: 4px;
+  border-radius: 100px;
+}
+
+#profile-det{
+  color: var(--subtle-text-100, #4F4E4E);
+
+  /* Body/X-small */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  /* 160% */
+  letter-spacing: 0.4px;
+  margin-left: 8px;
+}
+
+#invest-det{
+  padding: 8px 0px;
+  margin: 0px auto;
+}
+
+#invest-text {
+  color: var(--body-text-100, #4B587C);
+
+  /* Body/Small */
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  /* 133.333% */
+  letter-spacing: 0.4px;
+}
+
+#previous-invest{
+  padding: 16px;
+  padding-bottom: 8px;
+  margin: 8px;
+  border-radius: 6px;
+  border: 0.5px solid var(--disabled-100, #C2C2C2);
+  background: #FFF;
+}
+
 #social-icons{
   padding: 8px 10px;
 }

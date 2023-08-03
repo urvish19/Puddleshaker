@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Profile | Puddleshaker</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preExplore" href="https://fonts.googleapis.com">
+    <link rel="preExplore" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
+    <title>Discover | Puddleshaker</title>
 </head>
 
 <body>
@@ -18,108 +24,183 @@
         <nav>
             <!--Hamburger menu in small screen-->
             <div class="title-bar" data-responsive-toggle="navbar" data-hide-for="medium">
-                <div class="title-bar-title">Menu</div>
-                <button class="menu-icon" type="button" data-toggle="navbar"></button>
+                <div class="title-bar-title"></div>
+                <button type="button" data-toggle="navbar">
+                    <span class="material-symbols-outlined" style="color: black;">
+                        menu
+                    </span>
+                </button>
+
+                <div class="main-logo">
+                    <img src="./imgs/Puddleshaker_logo.png" alt="">
+                </div>
+
+                <div class="top-bar-right">
+                    <a href="./notification.html">
+                        <span class="material-symbols-outlined" style="color: black;">
+                            notifications
+                        </span>
+                    </a>
+                </div>
+
             </div>
 
             <!--Links need to be added-->
             <div class="top-bar" id="navbar">
                 <div class="top-bar-left">
-                    <ul class="dropdown menu align-left" data-dropdown-menu>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./discover.html">Discover</a></li>
-                        <li><a href="./myconnects.html">My Connects</a></li>
-                        <li><a href="./myprofile.html">My Profile</a></li>
+                    <ul class="cell dropdown menu align-left" data-dropdown-menu>
+                        <li class="cell small-12 medium-2 large-3"><a href="./index.html">Home</a></li>
+                        <li class="cell small-12 medium-2 large-3"><a href="./myconnections.html">My Connections</a>
+                        </li>
+                        <li class="cell small-12 medium-2 large-3"><a href="#">Messages</a></li>
+                        <li class="cell small-12 medium-2 large-3"><a href="./myprofile.html">Profile</a></li>
+                        <li class="cell small-12 medium-2 large-3"><a href="./login.html">Log out</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--Company Bio-->
-    <section class="grid-container fluid">
-        <h1>Glamazon</h1>
-        <img id="profile-image" src="glamazon_logo.png" alt="Glamazon Logo">
-        <p>Glamazon is a leading investment company specializing in various industries. We have a team of
-            experts with extensive experience in the field of finance and investment management. Our mission is
-            to provide strategic investment solutions to help our clients achieve their financial goals.</p>
+    <!--Headline text with back button-->
+    <section class="grid-container fluid grid-x" style="align-items: center;">
+        <div class="small-1" id="back-button">
+            <a href="./index.html"><span class="material-symbols-outlined">
+                    arrow_back
+                </span></a>
+        </div>
+
+        <div class="small-11">
+            <h1 id="headline">Profile</h1>
+        </div>
     </section>
 
-    <!--Navigation List-->
+    <!--This section is about profile picture and name-->
     <section class="grid-container fluid">
-        <h2>Industry Expertise</h2>
-        <p>At Glamazon, we have in-depth knowledge and expertise in the following industries:</p>
-        <ul>
-            <li>Fashion</li>
-            <li>Skincare</li>
-            <li>Fitness</li>
-            <li>Food and Beverages</li>
-        </ul>
+        <!--Cards layout-->
+        <div class="grid-x grid-margin-x" style="margin-top: 16px;">
+            <div class="grid-x cell">
+                <img id="profile-img" src="./imgs/emily.png" alt="File">
+                <div class="grid-y" style="margin-left: 8px;">
+                    <h1 class="cell" id="file-title">Emily Davidson</h1>
+                    <div class="grid-x cell">
+                        <p id="profile-det" style="margin-bottom: 8px;">Waterloo | </p>
+                        <p id="profile-det" style="margin-bottom: 8px;">Angel Investor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!--Investment Information-->
-    <section class="grid-container fluid">
-        <h2>Investment Information</h2>
-        <p>Our investment services include:</p>
-        <ul>
-            <li>Equity Investments</li>
-            <li>Fixed Income</li>
-            <li>Alternative Investments</li>
-            <li>Portfolio Management</li>
-        </ul>
+    <!--This section is Industry experties-->
+    <section class="grid-container fluid grid-x grid-margin-x">
+        <h2 class="cell small-12" style="text-align: left; margin-top: 16px;">Industry Expertise</h2>
+        <div class="grid-x">
+            <div class="chip">Tech</div>
+            <div class="chip">Innovation</div>
+            <div class="chip">A.I</div>
+            <div class="chip">Machine Learning</div>
+        </div>
     </section>
 
-    <!--Navigation Type-->
-    <section class="grid-container fluid">
-        <h2>Investment Type</h2>
-        <p>Please select the stage of investment:</p>
-        <select id="investment-dropdown">
-            <option value="seed">Seed Stage</option>
-            <option value="early">Early Stage</option>
-            <option value="growth">Growth Stage</option>
-            <option value="exit">Exit Stage</option>
-        </select>
+    <!--This section is about profile-->
+    <section class="grid-container fluid grid-x grid-margin-x">
+        <h2 class="cell" style="text-align: left; font-weight: 500; margin-top: 16px;">About Me</h2>
+        <p class="cell">I'm Emily Davidson, an angel investor from Waterloo, Canada, with a strong finance and business
+            background. After climbing the corporate ladder, I founded my own investment firm, where I passionately
+            support startups and entrepreneurs. Guided by a keen eye for market analysis, I collaborate with diverse
+            ventures on their unique missions. Beyond work, I advocate for entrepreneurship and education in my
+            community, and in my free time, I love exploring the arts, books, and traveling to gain fresh perspectives.
+            My journey reflects resilience and belief in innovative ideas, leaving a lasting legacy of inspiration.</p>
     </section>
 
-    <!--Organisation's Mission-->
-    <section class="grid-container fluid">
-        <h2>Mission Statement</h2>
-        <p>Our mission is to identify and support innovative businesses with strong growth potential. We provide
-            strategic capital, industry expertise, and operational support to help our portfolio companies
-            achieve sustainable success.</p>
+    <!--This section is my profile stats-->
+    <section class="grid-container fluid grid-x grid-margin-x">
+        <h2 style="text-align: left; font-weight: 500; margin-top: 16px;" class="cell">My Investments</h2>
+        <div class="grid-x cell" style="align-items: center;" id="invest-det">
+            <p class="cell small-8" id="invest-text">Minimum Investment</p>
+            <p class="cell small-4" id="invest-text">CAD $0</p>
+        </div>
+
+        <div class="grid-x cell" style="align-items: center;" id="invest-det">
+            <p class="cell small-8" id="invest-text">Maximum Investment</p>
+            <p class="cell small-4" id="invest-text">CAD $93094</p>
+        </div>
+
+        <div class="grid-x cell" style="align-items: center;" id="invest-det">
+            <p class="cell small-8" id="invest-text">Investor Type</p>
+            <p class="cell small-4" id="invest-text">Angel Investor</p>
+        </div>
+
+        <div class="grid-x cell" style="align-items: center;" id="invest-det">
+            <p class="cell small-8" id="invest-text">Registration Date</p>
+            <p class="cell small-4" id="invest-text">July 28, 2022</p>
+        </div>
+
+        <div class="grid-x cell" style="align-items: center;" id="invest-det">
+            <p class="cell small-8" id="invest-text">Network</p>
+            <p class="cell small-4" id="invest-text">KWC</p>
+        </div>
     </section>
 
-    <!--Organisation's Vision-->
-    <section class="grid-container fluid">
-        <h2>Vision Statement</h2>
-        <p>Our vision is to be a leading investment fund that drives positive change and creates long-term value
-            for our investors and portfolio companies.</p>
+    <!--This section is to showcase previous investment-->
+    <section class="grid-container fluid grid-x grid-margin-x">
+        <h2 style="text-align: left; font-weight: 500; margin-top: 16px;" class="cell">Previous Investments</h2>
+        <div class="grid-x cell">
+            <div class="grid-y" id="previous-invest">
+                <img src="./big logo/openai.png" alt="OpenAI" class="cell">
+                <h3 class="cell" id="invest-text" style="text-align: center; margin-top: 16px;">OpenAI</h3>
+            </div>
+    
+            <div class="grid-y" id="previous-invest">
+                <img src="./big logo/finseca.png" alt="OpenAI" class="cell">
+                <h3 class="cell" id="invest-text" style="text-align: center; margin-top: 16px;">Finseca</h3>
+            </div>
+    
+            <div class="grid-y" id="previous-invest">
+                <img src="./big logo/strava.png" alt="OpenAI" class="cell">
+                <h3 class="cell" id="invest-text" style="text-align: center; margin-top: 16px;">Strava</h3>
+            </div>
+    
+            <div class="grid-y" id="previous-invest">
+                <img src="./big logo/alltrail.png" alt="OpenAI" class="cell">
+                <h3 class="cell" id="invest-text" style="text-align: center; margin-top: 16px;">All trail</h3>
+            </div>
+    
+            <div class="grid-y" id="previous-invest">
+                <img src="./big logo/generalmiles.png" alt="OpenAI" class="cell">
+                <h3 class="cell" id="invest-text" style="text-align: center; margin-top: 16px;">GM</h3>
+            </div>
+        </div>
     </section>
 
-    <!--Organisation's Previous Investments-->
-    <section class="grid-container fluid">
-        <h2>Previous Investments</h2>
-        <ul>
-            <li>FitLife Gym</li>
-            <li>Fit Flex</li>
-            <li>HealthTech Solutions</li>
-            <li>Glowing Skin Cosmetics</li>
-            <li>Fashion Forward</li>
-            <li>FashionMe</li>
-        </ul>
-    </section>
+    <!-- This is the footer section of the page-->
+    <footer class="footer grid-container fluid">
+        <div class="small-9 medium-6 large-3">
+            <img src="./imgs/ps_logo_white1.png" />
+        </div>
 
-    <!--This is the contact detail section-->
-    <section class="grid-container fluid">
-        <h2>Contact Details</h2>
-        <p>Address: 123 York Street East, City, Canada</p>
-        <p>Email: info@glamazon.com</p>
-        <p>Phone: +1 123-456-7890</p>
-    </section>
+        <div class="grid-x">
+            <div class="cell small-6 medium-6 large-6">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Discover</a></li>
+                    <li><a href="#">My Explores</a></li>
+                    <li><a href="#">My Profile</a></li>
+                </ul>
+            </div>
 
-    <!-- Footer section -->
-    <footer class="grid-container fluid">
-        <p>&copy; 2023 Glamazon. All Rights Reserved.</p>
+            <div class="cell small-6 medium-6 large-6">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <p class="cell small-3 medium-3 large-3">&copy; 2023 Puddleshaker. All Rights Reserved.</p>
     </footer>
 
     <script src="js/vendor/jquery.js"></script>
