@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preExplore" href="https://fonts.googleapis.com">
+    <link rel="preExplore" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300&display=swap"
+        rel="stylesheet">
     <title>Puddleshaker | Login</title>
 </head>
 
@@ -17,23 +23,30 @@
     <!--This is header section of Signup -->
     <header class="grid-container fluid">
         <img src="./imgs/ps_logo.png" alt="puddleshaker" class="main-logo">
-        <h1 class="title grid-x">Log in</h1>
+        <h1 id="headline" class="cell" style="text-align: center; font-size:24px; font-weight: 500;">Log in</h1>
     </header>
 
     <!--This is login form -->
-    <main class="grid-container">
-        <div class="grid-x grid-padding-x">
+    <main class="grid-container fluid">
+        <div class="grid-x">
             <form action="./index.html" method="post" name="authentication" id="loginForm"
                 class="cell small-12 medium-12 large-12">
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" required>
+                <div style="margin: 8px 0px;">
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <input type="checkbox" class="checkbox" onclick="Toggle();"> Show Password
+                <div style="margin: 8px 0px;">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
 
-                <input type="submit" id="submit" class="button cell" value="Login">
-                <p>Don't have an account?<a href="./signup.html">Sign up</a></p>
+                <div class="cell">
+                    <input type="checkbox" class="checkbox" onclick="Toggle();"> Show Password
+                </div>
+
+                <input type="submit" id="submit" class="solid-button cell" value="Login" style="margin: 8px 0px;">
+                <p style="margin-top: 8px;">Don't have an account? <a href="./signup.html" style="color: #F17661;">Sign up</a></p>
             </form>
         </div>
     </main>

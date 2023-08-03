@@ -89,6 +89,13 @@ h2 {
   letter-spacing: 0.25px;
 }
 
+input[type=text], [type=password] {
+  border-radius: 3px;
+  border: 0.5px solid var(--dark-100, #000);
+  background: #fff;
+  margin: 12px 0px;
+  box-shadow: none;
+}
 
 /*BANNER: Innovation page company logo and title*/
 
@@ -135,9 +142,9 @@ header a {
 
 .main-logo {
   display: block;
-  width: 50%;
+  width: 70%;
   text-align: center;
-  margin: 16px auto;
+  margin: 48px auto;
 }
 
 .title {
@@ -181,6 +188,18 @@ header a {
 
 /*Solid button*/
 #solid-button {
+  border-radius: 4px;
+  border: 0.5px solid var(--primary-100, #F17661);
+  background: var(--primary-100, #F17661);
+  mix-blend-mode: multiply;
+  padding: 8px 8px;
+  color: #FFF;
+  margin: 16px 8px;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.solid-button{
   border-radius: 4px;
   border: 0.5px solid var(--primary-100, #F17661);
   background: var(--primary-100, #F17661);
