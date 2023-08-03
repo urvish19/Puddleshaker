@@ -168,7 +168,7 @@ header a {
   background: #fff;
   color:  #F17661;
   mix-blend-mode: multiply;
-  padding: 16px 8px;
+  padding: 8px 8px;
   margin: 16px 8px;
   margin-bottom: 8px;
   text-align: center;
@@ -180,7 +180,7 @@ header a {
   border: 0.5px solid var(--primary-100, #F17661);
   background: var(--primary-100, #F17661);
   mix-blend-mode: multiply;
-  padding: 16px 8px;
+  padding: 8px 8px;
   color: #FFF;
   margin: 16px 8px;
   margin-bottom: 8px;
