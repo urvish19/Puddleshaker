@@ -142,6 +142,13 @@ header a {
 
 .main-logo {
   display: block;
+  width: 50%;
+  text-align: center;
+  margin: 16px auto;
+}
+
+.main-logo1 {
+  display: block;
   width: 70%;
   text-align: center;
   margin: 48px auto;
