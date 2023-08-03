@@ -483,6 +483,36 @@ header a {
 }
 
 
+#notification-card {
+  transition: box-shadow 0.3s;
+  border: 0.5px solid var(--disabled-100, #000);
+  border-top-style: solid;
+  border-right-style: none;
+  border-bottom-style: none;
+  border-left-style: none;
+  background: #FFF;
+  margin: 0px 0px;
+  height: auto;
+  padding: 8px;
+}
+
+#not-det {
+  color: var(--subtle-text-100, #4F4E4E);
+
+  /* Body/X-small */
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  /* 160% */
+  letter-spacing: 0.4px;
+  margin-bottom: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+}
+
 #social-icons{
   padding: 8px 10px;
 }
