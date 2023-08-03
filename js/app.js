@@ -7,13 +7,26 @@ $(document).ready(function () {
 
   // Define the array for authentication: user list
   var users = [
-    { name:'Urvish', email: 'urvishgajjar@gmail.com', password: 'Puddleshaker@123' },
-    { name:'Arshdeep', email: 'arshdeep@gmail.com', password: 'Puddleshaker@123' },
-    { name:'Suveen', email: 'suveen@gmail.com', password: 'Puddleshaker@123' },
-    { name:'Ishita', email: 'ishita@gmail.com', password: 'Puddleshaker@123' },
-    { name:'Makranti', email: 'makranti@gmail.com', password: 'Puddleshaker@123' },
-    { name:'Liesel', email: 'liesel@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Urvish', email: 'urvishgajjar@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Arshdeep', email: 'arshdeep@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Suveen', email: 'suveen@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Ishita', email: 'ishita@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Makranti', email: 'makranti@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Liesel', email: 'liesel@gmail.com', password: 'Puddleshaker@123' },
+    { name: 'Emily', email: 'emily@email.com', password: 'Puddleshaker@123' },
   ];
+
+  // Function to validate the email format
+  function validateEmail(email) {
+    var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    return emailRegex.test(email);
+  }
+
+  // Function to validate the password format (optional: you can add your own rules)
+  function validatePassword(password) {
+    // Example: Password should be at least 6 characters long
+    return password.length >= 6;
+  }
 
   $('#loginForm').submit(function (event) {
 
@@ -21,6 +34,17 @@ $(document).ready(function () {
 
     var email = $('#email').val();
     var password = $('#password').val();
+
+    // Validate email and password fields
+    if (!validateEmail(email)) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (!validatePassword(password)) {
+      alert("Password should be at least 6 characters long.");
+      return;
+    }
 
     // Check if the entered email and password match any user in the array
     var authenticatedUser = users.find(function (user) {
@@ -36,7 +60,7 @@ $(document).ready(function () {
   });
 
   //Add user name to index file for greetings
-  $("#submit").click(function(){
+  $("#submit").click(function () {
     $("#title").append("users.val(1);");
   });
 
@@ -74,11 +98,11 @@ function Verify() {
     }
   };*/
 
-  function Toggle() {
-    var x = document.getElementById("password");
-    if (x.type === "password") {
-      x.type = "text";
-    } else {
-      x.type = "password";
-    }
+function Toggle() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
   }
+}
