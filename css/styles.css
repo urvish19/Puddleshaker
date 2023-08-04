@@ -552,6 +552,16 @@ header a {
   margin-left: 8px;
 }
 
+#profile-page-text {
+  color: var(--body-text-100, #4B587C);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: auto;
+  letter-spacing: 0.4px;
+}
+
 #invest-det {
   padding: 8px 0px;
   margin: 0px auto;
