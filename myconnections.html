@@ -24,10 +24,10 @@
     <header>
         <nav>
             <!--Hamburger menu in small screen-->
-            <div class="title-bar" data-responsive-toggle="navbar" data-hide-for="medium">
+            <div class="title-bar grid-container fluid grid-x grid-margin-x" data-responsive-toggle="navbar" data-hide-for="medium">
                 <div class="title-bar-title"></div>
                 <button type="button" data-toggle="navbar">
-                    <span class="material-symbols-outlined" style="color: black;">
+                    <span class="material-symbols-outlined" style="color: black; margin-left: 8px;">
                         menu
                     </span>
                 </button>
@@ -38,7 +38,7 @@
 
                 <div class="top-bar-right">
                     <a href="./notification.html">
-                        <span class="material-symbols-outlined" style="color: black;">
+                        <span class="material-symbols-outlined" style="color: black; margin-right: 8px;">
                             notifications
                         </span>
                     </a>
@@ -97,22 +97,22 @@
     <!-- This is the footer section of the page-->
     <footer class="footer grid-container fluid">
         <div class="small-9 medium-6 large-3">
-            <img src="./imgs/ps_logo_white1.png" />
+            <img src="./imgs/ps_logo_white1.png"/>
         </div>
 
         <div class="grid-x">
             <div class="cell small-6 medium-6 large-6">
-                <h4>Company</h4>
+                <p>Company<p>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Discover</a></li>
-                    <li><a href="#">My Connects</a></li>
-                    <li><a href="#">My Profile</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./myconnections.html">My Connections</a></li>
+                    <li><a href="#">Messages</a></li>
+                    <li><a href="./myprofile.html">Profile</a></li>
                 </ul>
             </div>
 
             <div class="cell small-6 medium-6 large-6">
-                <h4>Legal</h4>
+                <p>Legal<p>
                 <ul>
                     <li><a href="#">Privacy</a></li>
                     <li><a href="#">Terms of Use</a></li>
@@ -120,8 +120,7 @@
                 </ul>
             </div>
         </div>
-
-        <p class="cell small-3 medium-3 large-3">&copy; 2023 Puddleshaker. All Rights Reserved.</p>
+        <p class="cell small-12 medium-12 large-12" style="text-align: center; font-size: smaller;">&copy; 2023 Puddleshaker. All Rights Reserved.</p>
     </footer>
 
     <script src="js/vendor/jquery.js"></script>

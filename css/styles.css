@@ -166,9 +166,10 @@ header a {
   color: #000;
 }
 
+/*Header Logo*/
 .main-logo {
   display: block;
-  width: 50%;
+  width: 45%;
   text-align: center;
   margin: 16px auto;
 }
@@ -563,7 +564,7 @@ header a {
 #social-icons{
   padding: 8px 10px;
 }
-
+/*
 input[type="checkbox"] { 
   position: relative;
 }
@@ -581,16 +582,9 @@ input[type="checkbox"] {
 input:checked + .checkbox {
   background: black;
   border: var(--border) solid black;
-}
+}*/
 
-.footer-simple {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  text-align: center;
-}
-
+/*Footer Style*/
 .footer {
   position: relative;
   left: 0;
@@ -606,14 +600,28 @@ input:checked + .checkbox {
 footer img {
   width: 40%;
   margin: 16px 0px;
+  max-width: 200px;
 }
 
 footer ul {
   list-style-type: none;
   margin: 0px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   padding: 0px;
   font-size: small;
+}
+
+footer p{
+  color: var(--white-100, #FFF);
+  
+    /* Label/Large */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 142.857% */
+    letter-spacing: 0.1px;
 }
 
 footer a {
