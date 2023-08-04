@@ -5446,7 +5446,12 @@ a.thumbnail {
           flex-wrap: wrap; }
   .top-bar,
   .top-bar ul {
-    background-color: #e6e6e6; }
+    background-color: #fff;
+ }
+
+ .top-bar{
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.10);
+ }
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
