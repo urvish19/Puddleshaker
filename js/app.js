@@ -53,8 +53,8 @@ $(document).ready(function () {
 
     if (authenticatedUser) {
       // Redirect to index.html upon successful login
-      //window.location.href = '/Users/urvish/Documents/Puddleshaker/index.html?uid=' + authenticatedUser.name;
-      windows.open('https://urvish19.github.io/Puddleshaker/index.html');
+      window.location.href = '/Users/urvish/Documents/Puddleshaker/index.html?uid=' + authenticatedUser.name;
+      //windows.open('https://urvish19.github.io/Puddleshaker/index.html');
     } else {
       alert('Invalid email or password. Please try again.');
     }
