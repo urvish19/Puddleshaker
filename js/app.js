@@ -13,7 +13,7 @@ $(document).ready(function () {
     { name: 'Ishita', email: 'ishita@gmail.com', password: 'Puddleshaker@123' },
     { name: 'Makranti', email: 'makranti@gmail.com', password: 'Puddleshaker@123' },
     { name: 'Liesel', email: 'liesel@gmail.com', password: 'Puddleshaker@123' },
-    { name: 'Emily', email: 'emily@email.com', password: 'Puddleshaker@123' },
+    { name: 'Emily Dadivson', email: 'emily@email.com', password: 'Puddleshaker@123' },
   ];
 
   // Function to validate the email format
