@@ -25,7 +25,7 @@ $(document).ready(function () {
   // Function to validate the password format (optional: you can add your own rules)
   function validatePassword(password) {
     // Example: Password should be at least 6 characters long
-    return password.length >= 6;
+    return password.length >= 8;
   }
 
   $('#loginForm').submit(function (event) {
@@ -42,7 +42,7 @@ $(document).ready(function () {
     }
 
     if (!validatePassword(password)) {
-      alert("Password should be at least 6 characters long.");
+      alert("Password should be at least 8 characters long.");
       return;
     }
 
@@ -54,7 +54,7 @@ $(document).ready(function () {
     if (authenticatedUser) {
       // Redirect to index.html upon successful login
       //window.location.href = '/Users/urvish/Documents/Puddleshaker/index.html?uid=' + authenticatedUser.name;
-      windows.open('https://urvish19.github.io/Puddleshaker/');
+      windows.open('https://urvish19.github.io/Puddleshaker/index.html');
     } else {
       alert('Invalid email or password. Please try again.');
     }
