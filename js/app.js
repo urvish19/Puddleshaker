@@ -3,7 +3,7 @@ $(document).foundation()
 $(document).ready(function () {
 
   // Trigger fadeIn effect when the page is fully loaded
-  $("body").fadeIn(300); // Adjust the duration as needed (e.g., 1000ms = 1 second)
+  $("body").fadeIn(400); // Adjust the duration as needed (e.g., 1000ms = 1 second)
 
   // Define the array for authentication: user list
   var users = [
