@@ -53,50 +53,23 @@ $(document).ready(function () {
 
     if (authenticatedUser) {
       // Redirect to index.html upon successful login
-      window.location.href = '/Users/urvish/Documents/IMMID/Term 2/Web & Digital Prototyping/Assignment 3/Group2_Structuring_web final/index.html';
+      window.location.href = '/Users/urvish/Documents/Puddleshaker/index.html?uid=' + authenticatedUser.name;
     } else {
       alert('Invalid email or password. Please try again.');
     }
   });
 
-  //Add user name to index file for greetings
-  $("#submit").click(function () {
-    $("#title").append("users.val(1);");
-  });
+  function checkAuthUser() {
+    //Check auth user
+    //let userName = localStorage.getItem("authenticatedUser");
+    const urlParams = new URLSearchParams(window.location.search);
+    const userName = urlParams.get('uid');
+    console.log(userName);
+  }
+
+
 
 });
-
-
-
-
-/*let data = {
-  users: [
-    {
-      name: "Urvish"
-      userRef: "urvishgajjar515@gmail.com",
-      passRef: "Puddleshaker@123",
-    },
-    {
-      name: "Arshdeep",
-      userRef: "arshdeep@gmail.com",
-      passRef: "Puddleshaker@123",
-    }
-  ],
-}
-
-//Authenticate user
-function Verify() {
-    var userRef = "urvishgajjar515@gmail.com";
-    var passRef = "Puddleshaker@123";
-    
-    var user =  document.getElementById("email").value;
-    var pass = document.getElementById("password").value;
-    if (user == userRef || pass == passRef) {
-    alert("Connexion")
-    } else {
-    alert("It's seem you make a mistake...")
-    }
-  };*/
 
 function Toggle() {
   var x = document.getElementById("password");
