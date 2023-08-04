@@ -53,7 +53,7 @@ $(document).ready(function () {
 
     if (authenticatedUser) {
       // Redirect to index.html upon successful login
-      window.location.href = '/Users/urvish/Documents/Puddleshaker/index.html?uid=' + authenticatedUser.name;
+      window.location.href = '/index.html?uid=' + authenticatedUser.name;
     } else {
       alert('Invalid email or password. Please try again.');
     }
